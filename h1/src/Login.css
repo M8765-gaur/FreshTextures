@@ -1,0 +1,82 @@
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container */
+  .login-container1 {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+  }
+  
+  /* Title */
+  .login-title1 {
+    font-size: 28px;
+    color: #246b45;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+  
+  /* Input fields */
+  .login-input1 {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .login-input1:focus {
+    box-shadow: 0 0 0 3px #a0f1df;
+  }
+  
+  /* Button */
+  .login-button1 {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: #38ef7d;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .login-button1:hover {
+    transform: scale(1.05);
+    background-color: #2ecc71;
+  }
+  
+  /* Fade-in keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

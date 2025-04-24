@@ -1,0 +1,108 @@
+/* Main container for the about page */
+.about-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* About page title */
+  .about-title {
+    font-size: 2.5rem;
+    color: #2e8b57;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Description paragraph */
+  .about-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+  }
+  
+  /* Team container */
+  .team-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Card for each team member */
+  .member-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image style for team member */
+  .member-img {
+   
+    height: 300px;
+    object-fit: cover;
+  }
+  .member-img1{
+   
+    height: 300px;
+    object-fit: cover;
+    align-items: center;
+    
+  }
+  
+  /* Member info */
+  .member-info {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .member-name {
+    font-size: 1.5rem;
+    color: #2e8b57;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .member-role {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .member-bio {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .team-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .member-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

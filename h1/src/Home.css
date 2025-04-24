@@ -1,0 +1,60 @@
+/* Main container */
+.auth-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fefefe;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Main heading */
+  .auth-container h1 {
+    font-size: 2.5rem;
+    color: #2e8b57;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Button container */
+  .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Button style */
+  
+  
+  .auth-buttons button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .auth-buttons button {
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect */
+  .auth-buttons button:hover {
+    transform: translateY(-5px);
+    background-color: #2e8b57;
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  

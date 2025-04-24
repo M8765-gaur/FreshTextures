@@ -1,0 +1,114 @@
+/* Basic Container Styling */
+.container-fluid {
+  margin-top: 40px;
+  width: 100%;
+  padding: 0 15px; /* Add padding to give space on smaller screens */
+}
+
+/* Heading Styling */
+.hc1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 650px;
+  color: #2e8b57;
+}
+
+/* Row Styling for Flex */
+.r1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%; /* Ensure full width for the row */
+  margin: 0 auto; /* Center align the row */
+}
+
+/* Column Styling (Bootstrap classes will work here) */
+.r2 {
+  position: relative;
+  width: 100%; /* Ensures full width when screen is small */
+  max-width: 270px; /* Fix image width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Helps in vertical stacking */
+}
+
+/* Image Styling */
+.r2 img {
+  
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Hover Effect for Image */
+.r2:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* Download Button Styling */
+.download-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Hover Effect */
+.download-btn:hover {
+  background-color: #246b45;
+  transform: translateX(-50%) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design Fixes */
+@media (max-width: 992px) {
+  .col-md-3 {
+    width: 45%; /* Two images per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+    width: 100%; /* One image per row on mobile */
+  }
+}
+.hc2
+{
+  color: #246b45;
+  font-weight: bold;
+} 
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #246b45;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #45a049;
+}
+

@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Soft gradient background */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Contact Card Container */
+.contact-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+  }
+  
+  /* Title */
+  .contact-title {
+    font-size: 28px;
+    color: #050505;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Input Fields */
+  .contact-input,
+  .contact-textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .contact-input:focus,
+  .contact-textarea:focus {
+    box-shadow: 0 0 0 3px #a0f1df;
+  }
+  
+  .contact-textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Submit Button */
+  .contact-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: #38ef7d;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    transform: scale(1.05);
+    background-color: #2ecc71;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* 👈 Changed from right to left */
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .logout-button:hover {
+    background-color: #2ecc71;
+  }
+  
