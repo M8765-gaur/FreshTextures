@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import './Login.css';
+import axios from 'axios';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -11,8 +10,7 @@ const Signup = () => {
     password: '',
     dob: '',
     gender: '',
-  });
-
+  })
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -24,24 +22,25 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:5000/users', formData);
-
       if (response.status === 201) {
         alert(`Account created for ${response.data.name}`);
         navigate('/Nav');
-      } else {
+      }
+      else {
         alert(`Signup failed: ${response.data.message || 'Please try again.'}`);
       }
     } catch (error) {
       console.error('Error during signup:', error.response || error);
-      const msg = error.response?.data?.message || 'Internal error occurred.';
+      const msg = error.response?.data?.message || 'Internal error occured.';
       alert(`Signup error: ${msg}`);
     }
   };
 
   return (
     <div className="login-container1">
-      <h2 className="login-title1">Sign Up</h2>
-      <form className="login-form1" onSubmit={handleSignup}>
+      <h2 className="login-title1">Signup</h2>
+
+      <div className="login-form1">
         <input
           type="text"
           name="name"
@@ -54,7 +53,7 @@ const Signup = () => {
         <input
           type="email"
           name="email"
-          placeholder="Email Address"
+          placeholder="Email"
           value={formData.email}
           onChange={handleChange}
           className="login-input1"
@@ -63,7 +62,7 @@ const Signup = () => {
         <input
           type="password"
           name="password"
-          placeholder="Create Password"
+          placeholder="Password"
           value={formData.password}
           onChange={handleChange}
           className="login-input1"
@@ -89,8 +88,12 @@ const Signup = () => {
           <option value="female">Female</option>
           <option value="other">Other</option>
         </select>
-        <button type="submit" className="login-button1">Sign Up</button>
-      </form>
+
+        <button className="login-button1" onClick={handleSignup} >
+          Sign Up
+        </button>
+
+      </div>
     </div>
   );
 };
